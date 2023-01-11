@@ -47,6 +47,13 @@ typedef struct
 
 }protimer_tick_event_t;
 
+typedef enum{
+    EVENT_HANDLED,
+    EVENT_IGNORED,
+    EVENT_TRANSITION
+
+}event_status_t;
+
 void protimer_init(protimer_t *mobj);
 
 #endif
